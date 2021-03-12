@@ -3,7 +3,7 @@ Queremos llevar a cabo un proyecto que simule un programa de preguntas con opcio
 [Descripción breve del proyecto a realizar (2-3 frases).]
 
 ## Integrantes del equipo
-Gonzalo Peinado Franganillo,
+Gonzalo Peinado Franganillo, @gonzalo.peinado@alumnos.upm.es
 David Gomez Rodriguez, @david.gomez52@alumnos.upm.es
 Miguel Guirao Villena, @miguel.guirao@alumnos.upm.es
 [Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]

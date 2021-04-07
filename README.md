@@ -3,7 +3,7 @@ Queremos llevar a cabo un proyecto que simule un programa de preguntas con opcio
 
 ## Integrantes del equipo
 - Gonzalo Peinado Franganillo, @gonzalo.peinado@alumnos.upm.es
-- David Gomez Rodriguez, @david.gomez52@alumnos.upm.es
+- David Gomez Rodriguez, [@david.gomez52@alumnos.upm.es] (https://github.com/Davidd02)
 - Miguel Guirao Villena, [@miguel.guirao@alumnos.upm.es] (https://github.com/MiguelGV22)
 
 ## Objetivos del trabajo

@@ -23,8 +23,10 @@ int main()
     jugador n,e,u;
     char norma[650];
     char ciniciales[350];
+    char juego[500];
     FILE *no;
     FILE *ci;
+    FILE *j;
 
    printf("Antes de empezar a jugar, conozcamonos un poco. Cual es tu nombre y tu edad?\n");
     scanf("%s %i",n.nombre,&e.edad);
@@ -37,7 +39,7 @@ int main()
 
    for(eleccion=0;eleccion<10000;eleccion++)
     {
-    int i=0,t=0;
+    int i=0,t=0,g=0;
     printf("Bienvenido a ATRAPA DOS MILLONES\n");
     printf("1-->Explicacion y reglas del juego\n");
     printf("2-->Condiciones iniciales\n");
@@ -79,7 +81,17 @@ int main()
         break;
 
     case 3:
-        printf("juegos...\n");
+        printf("\n");
+        j=fopen("juegos.txt", "r");
+        fscanf(j,"%[^'.']",juego);
+        fclose(j);
+        while(juego[g]!='\0')
+        {
+            printf("%c",juego[g]);
+            g++;
+        }
+        printf("\n\n\n");
+
         break;
 
     case 4:

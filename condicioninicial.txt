@@ -1,0 +1,5 @@
+Toma las riendas del juego.Tu podras elegir la cantidad de dinero con la que empezar.
+Puedes elegir entre empezar con 50k o con 100k de euros teniendo en cuenta que las preguntas seran mas faciles si eliges la opcion de menos dinero.
+Te podra la ambicion o iras a asegurar?
+Cuando inicies el juego tendras la opcion de decidir la cantidad inicial.
+Suerte y... A JUGAR!

@@ -1,5 +1,5 @@
 #include<stdio.h>
-typedef struct
+typedef struct //estructura para  identificar a la persona que usa el programa
 {
     char nombre[50];
     char usuario[50];
@@ -7,27 +7,29 @@ typedef struct
 
 }jugador;
 
-typedef struct
+typedef struct //estructura que se usa al final para hacer un resumen de la jugada diciendo el dinero que ha perdido en cada pregunta y el dinero ganado
 {
     int perdidas[10];
     int fin;
 }premio;
 
- int drestante(int d,int r);
- int resta(int election[5],int correcta);
+ int drestante(int d,int r); //funcion que calcula el dinero restante despues de cada pregunta
+ int resta(int election[5],int correcta); //funcion que calcula el dinero que se tiene que restar despues de cada pregunta
 
 
 int main()
 {
      int eleccion,dinicial;
     jugador n,e,u;
+    //cadenas de caracteres para poder imprimir en pantalla los ficheros
     char norma[650];
     char ciniciales[350];
     char juego[500];
+    //punteros de ficheros
     FILE *no;
     FILE *ci;
     FILE *j;
-
+    //uso de la estructura "jugador"
    printf("Antes de empezar a jugar, conozcamonos un poco. Cual es tu nombre y tu edad?\n");
     scanf("%s %i",n.nombre,&e.edad);
     printf("Perfecto %s, encantado de conocerte. Necesito que me indiques el nombre de usuario con el que quieres que me refiera a ti durante el juego\n",n.nombre);
@@ -50,7 +52,7 @@ int main()
 
     switch(eleccion)
     {
-    case 1:
+    case 1: //lee e imprime en pantalla el fichero que explica las normas
         printf("\n");
 
         no=fopen("normas.txt","r");
@@ -67,7 +69,7 @@ int main()
         printf("\n\n\n");
         break;
 
-    case 2:
+    case 2: //lee e imprime en pantalla el fichero que explica las condiciones iniciales
        printf("\n");
         ci=fopen("condicioninicial.txt","r");
         fscanf(ci,"%[^'!']",ciniciales);
@@ -80,7 +82,7 @@ int main()
         printf("\n\n\n");
         break;
 
-    case 3:
+    case 3: //lee e imprime en pantalla el fichero con la lista de juegos
         printf("\n");
         j=fopen("juegos.txt", "r");
         fscanf(j,"%[^'.']",juego);
@@ -102,7 +104,7 @@ int main()
         printf("OPCION 2 --> 100k euros\n");
         scanf("%i",&dinicial);
 
-        if(dinicial==1)
+        if(dinicial==1) //si elige la primera opcion (50k)
         {
             int reparticion1[5];
             int i,r,dres,correct1;
@@ -118,21 +120,22 @@ int main()
             printf("Opcion E--> Dnieper\n");
             printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total tienes 50 fajos)\n");
             for(i=0;i<5;i++)
-                scanf("%i",&reparticion1[i]);
-            correct1=reparticion1[1];
+                scanf("%i",&reparticion1[i]); //el usuario introduce en cada componente del vector la cantidad de dinero que quiere introducir en cada opcion
+            correct1=reparticion1[1]; //respuesta correcta
+            //uso de las funciones
             r=resta(reparticion1,correct1);
 
             dres=drestante(50000,r);
 
 
 
-                if(dres<=0)
+                if(dres<=0) //si el dinero que queda es 0 o menor
                 {
                 printf("La opcion correcta es la B, el rio Volga\n");
                 printf("\n");
                 printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
                 }
-                else
+                else //si el dinero restante es mayor que 0
                 {
                 int reparticion2[5],dres1,correct2;
                 printf("\n");

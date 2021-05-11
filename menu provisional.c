@@ -190,13 +190,45 @@ int main()
 
                                 if(dres2<=0)
                                 {
-                                    printf("La opcion correcta es la B,Brasil. Eta seleccion ha ganado 5 mundiales, lo que hace que sea la que mas ha ganado\n");
+                                    printf("La opcion correcta es la B,Brasil. Esta seleccion ha ganado 5 mundiales, lo que hace que sea la que mas ha ganado\n");
                                     printf("\n");
                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                                 }
                                 else
                                 {
+                                   int reparticion4[5],dres3,correct4;
+                                    printf("La opcion correcta es la B,Brasil. Esta seleccion ha ganado 5 mundiales, lo que hace que sea la que mas ha ganado\n");
+                                    printf("\n");
+                                    printf("Despues de esta pregunta te quedan...%i euros",dres2);
+                                    printf("\n\n");
+                                    printf("Sigamos con la siguiente pregunta\n:");
+                                    printf("Cual es la capital de Albania?\n ");
+                                    printf("Opcion A-->Kabul\n");
+                                    printf("Opcion B-->Manama\n");
+                                    printf("Opcion C-->Sucre\n");
+                                    printf("Opcion D-->Tirana\n");
+                                    printf("Opcion E-->Moroni\n");
+                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres2/1000);
+                                    for(i=0;i<5;i++)
+                                        scanf("%i",&reparticion4[i]);
+                                    correct4=reparticion4[3];
+                                    r=resta(reparticion4,correct4);
+                                    dres3=drestante(dres2,r);
 
+
+                                            if(dres3<=0)
+                                            {
+                                                printf("La opcion correcta es la D, Tirana\n");
+                                                printf("\n");
+                                                printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+
+                                            }
+                                            else
+                                            {
+                                               printf("La opcion correcta es la D, Tirana\n");
+                                                printf("\n");
+                                                printf("Muy bien jugado, llegas al ecuador del juego con %i euros",dres3);
+                                            }
                                 }
 
 

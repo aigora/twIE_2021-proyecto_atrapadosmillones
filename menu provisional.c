@@ -107,18 +107,23 @@ int main()
         if(dinicial==1) //si elige la primera opcion (50k)
         {
             int reparticion1[5];
-            int i,r,dres,correct1;
+            char pregunta1[500],respuesta1[700];
+            int i,r,dres,correct1,p11=0,r11=0;
+            FILE *p1;
+            FILE *r1;
             printf("Perfecto, empiezas el juego con 50k euros.\n");
             printf("\n");
-            printf("Comenzamos con la primera pregunta\n");
-            printf("¿Cual es el rio mas largo de Europa?");
+
+            p1=fopen("pregunta11.txt","r");
+            fscanf(p1,"%[^'.']",pregunta1);
+            fclose(p1);
+            while(pregunta1[p11]!='\0')
+            {
+                printf("%c",pregunta1[p11]);
+                p11++;
+            }
             printf("\n");
-            printf("Opcion A--> Danubio\n");
-            printf("Opcion B--> Volga\n");
-            printf("Opcion C--> Tajo\n");
-            printf("Opcion D--> Ural\n");
-            printf("Opcion E--> Dnieper\n");
-            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total tienes 50 fajos)\n");
+
             for(i=0;i<5;i++)
                 scanf("%i",&reparticion1[i]); //el usuario introduce en cada componente del vector la cantidad de dinero que quiere introducir en cada opcion
             correct1=reparticion1[1]; //respuesta correcta
@@ -131,26 +136,48 @@ int main()
 
                 if(dres<=0) //si el dinero que queda es 0 o menor
                 {
-                printf("La opcion correcta es la B, el rio Volga\n");
+                r1=fopen("respuesta11.txt","r");
+                fscanf(r1,"%[^'!']",respuesta1);
+                fclose(r1);
+                while(respuesta1[r11]!='\0')
+                {
+                    printf("%c",respuesta1[r11]);
+                    r11++;
+                }
                 printf("\n");
                 printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
                 }
                 else //si el dinero restante es mayor que 0
                 {
-                int reparticion2[5],dres1,correct2;
+                int reparticion2[5],dres1,correct2,p12=0,r12=0;
+                char pregunta2[500],respuesta2[500];
+                FILE *p2;
+                FILE *r2;
                 printf("\n");
-                printf("La opcion correcta es la B, el rio Volga\n");
+                r1=fopen("respuesta11.txt","r");
+                fscanf(r1,"%[^'!']",respuesta1);
+                fclose(r1);
+                while(respuesta1[r11]!='\0')
+                {
+                    printf("%c",respuesta1[r11]);
+                    r11++;
+                }
+                printf("\n\n");
+
                 printf("Por lo tanto,te quedan %i euros\n",dres);
                 printf("\n");
 
-                printf("Contiunuemos con la segunda pregunta que dice asi:\n");
-                printf("Como se llamaron los reinos en los que se dividio Al-Andalus en su epoca de mayor crisis?\n");
+                p2=fopen("pregunta12.txt","r");
+                fscanf(p2,"%[^'.']",pregunta2);
+                fclose(p2);
+                while(pregunta2[p12]!='\0')
+                {
+                    printf("%c",pregunta2[p12]);
+                    p12++;
+
+                }
                 printf("\n");
-                printf("Opcion A-->Reinos celtas\n");
-                printf("Opcion B-->Reinos germanos\n");
-                printf("Opcion C-->Reinos de guerra\n");
-                printf("Opcion D-->Reinos de taifas\n");
-                printf("Opcion E-->Reinos alados\n");
+
                 printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
                 for(i=0;i<5;i++)
                     scanf("%i",&reparticion2[i]);
@@ -162,24 +189,50 @@ int main()
 
                     if(dres1<=0)
                     {
-                        printf("La opcion correcta es la D,reinos de taifas\n");
                         printf("\n");
+                        r2=fopen("respuesta12.txt","r");
+                        fscanf(r2,"%[^';']",respuesta2);
+                        fclose(r2);
+                        while(respuesta2[r12]!='\0')
+                        {
+                            printf("%c",respuesta2[r12]);
+                            r12++;
+                        }
+                        printf("\n\n");
                         printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                     }
                     else
                     {
-                        int reparticion3[5],dres2,correct3;
-                        printf("La opcion correcta es la D,reinos de taifas\n");
+                        int reparticion3[5],dres2,correct3,p13=0,r13=0;
+                        char pregunta3[500],respuesta3[500];
+                        FILE *p3;
+                        FILE *r3;
+                         printf("\n");
+
+                        r2=fopen("respuesta12.txt","r");
+                        fscanf(r2,"%[^';']",respuesta2);
+                        fclose(r2);
+                        while(respuesta2[r12]!='\0')
+                        {
+                            printf("%c",respuesta2[r12]);
+                            r12++;
+                        }
+                        printf("\n\n");
+
                         printf("Por lo tanto, te quedan %i euros\n",dres1);
                         printf("\n\n");
-                        printf("Vamos con la tercera pregunta:\n");
-                        printf("Que seleccion nacional ha ganado mas mundiales de futbol?\n");
+
+                        p3=fopen("pregunta13.txt","r");
+                        fscanf(p3,"%[^'.']",pregunta3);
+                        fclose(p3);
+                        while(pregunta3[p13]!='\0')
+                        {
+                            printf("%c",pregunta3[p13]);
+                            p13++;
+
+                        }
                         printf("\n");
-                        printf("Opcion A-->Francia\n");
-                        printf("Opcion B-->Brasil\n");
-                        printf("Opcion C-->Holanda\n");
-                        printf("Opcion D-->Belgica\n");
-                        printf("Opcion E-->Argentina\n");
+
                         printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres1/1000);
                         for(i=0;i<5;i++)
                             scanf("%i",&reparticion3[i]);
@@ -190,24 +243,50 @@ int main()
 
                                 if(dres2<=0)
                                 {
-                                    printf("La opcion correcta es la B,Brasil. Esta seleccion ha ganado 5 mundiales, lo que hace que sea la que mas ha ganado\n");
                                     printf("\n");
+                                    r3=fopen("respuesta13.txt","r");
+                                    fscanf(r3,"%[^';']",respuesta3);
+                                    fclose(r3);
+                                    while(respuesta3[r13]!='\0')
+                                    {
+                                        printf("%c",respuesta3[r13]);
+                                        r13++;
+                                    }
+                                    printf("\n\n");
                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                                 }
                                 else
                                 {
-                                   int reparticion4[5],dres3,correct4;
-                                    printf("La opcion correcta es la B,Brasil. Esta seleccion ha ganado 5 mundiales, lo que hace que sea la que mas ha ganado\n");
+                                   int reparticion4[5],dres3,correct4,p14=0,r14=0;
+                                   char pregunta4[500],respuesta4[500];
+                                    FILE *p4;
+                                    FILE *r4;
                                     printf("\n");
+
+                                    r3=fopen("respuesta13.txt","r");
+                                    fscanf(r3,"%[^';']",respuesta3);
+                                    fclose(r3);
+                                    while(respuesta3[r13]!='\0')
+                                    {
+                                        printf("%c",respuesta3[r13]);
+                                        r13++;
+                                    }
+                                    printf("\n\n");
+
                                     printf("Despues de esta pregunta te quedan...%i euros",dres2);
                                     printf("\n\n");
-                                    printf("Sigamos con la siguiente pregunta\n:");
-                                    printf("Cual es la capital de Albania?\n ");
-                                    printf("Opcion A-->Kabul\n");
-                                    printf("Opcion B-->Manama\n");
-                                    printf("Opcion C-->Sucre\n");
-                                    printf("Opcion D-->Tirana\n");
-                                    printf("Opcion E-->Moroni\n");
+
+                                   p4=fopen("pregunta14.txt","r");
+                                    fscanf(p4,"%[^'.']",pregunta4);
+                                    fclose(p4);
+                                    while(pregunta4[p14]!='\0')
+                                    {
+                                        printf("%c",pregunta4[p14]);
+                                        p14++;
+
+                                    }
+                                    printf("\n");
+
                                     printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres2/1000);
                                     for(i=0;i<5;i++)
                                         scanf("%i",&reparticion4[i]);
@@ -218,15 +297,31 @@ int main()
 
                                             if(dres3<=0)
                                             {
-                                                printf("La opcion correcta es la D, Tirana\n");
-                                                printf("\n");
+                                               printf("\n");
+                                                r4=fopen("respuesta14.txt","r");
+                                                fscanf(r4,"%[^';']",respuesta4);
+                                                fclose(r4);
+                                                while(respuesta4[r14]!='\0')
+                                                {
+                                                    printf("%c",respuesta4[r14]);
+                                                    r14++;
+                                                }
+                                                printf("\n\n");
                                                 printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
 
                                             }
                                             else
                                             {
-                                               printf("La opcion correcta es la D, Tirana\n");
+                                              r4=fopen("respuesta14.txt","r");
+                                                fscanf(r4,"%[^';']",respuesta4);
+                                                fclose(r4);
                                                 printf("\n");
+                                                while(respuesta4[r14]!='\0')
+                                                {
+                                                    printf("%c",respuesta4[r14]);
+                                                    r14++;
+                                                }
+                                                printf("\n\n");
                                                 printf("Muy bien jugado, llegas al ecuador del juego con %i euros",dres3);
                                             }
                                 }

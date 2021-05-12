@@ -1,0 +1,8 @@
+Sigamos con la siguiente pregunta:
+Cual es la capital de Albania?
+Opcion A-->Kabul
+Opcion B-->Manama
+Opcion C-->Sucre
+Opcion D-->Tirana
+Opcion E-->Moroni.
+ 

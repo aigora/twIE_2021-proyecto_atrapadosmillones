@@ -15,6 +15,10 @@ typedef struct //estructura que se usa al final para hacer un resumen de la juga
 
  int drestante(int d,int r); //funcion que calcula el dinero restante despues de cada pregunta
  int resta(int election[5],int correcta); //funcion que calcula el dinero que se tiene que restar despues de cada pregunta
+ void pregunta11(),respuesta11();
+ void pregunta12(),respuesta12();
+ void pregunta13(),respuesta13();
+ void pregunta14(),respuesta14();
 
 
 int main()
@@ -107,21 +111,10 @@ int main()
         if(dinicial==1) //si elige la primera opcion (50k)
         {
             int reparticion1[5];
-            char pregunta1[500],respuesta1[700];
-            int i,r,dres,correct1,p11=0,r11=0;
-            FILE *p1;
-            FILE *r1;
+            int i,r,dres,correct1;
             printf("Perfecto, empiezas el juego con 50k euros.\n");
             printf("\n");
-
-            p1=fopen("pregunta11.txt","r");
-            fscanf(p1,"%[^'.']",pregunta1);
-            fclose(p1);
-            while(pregunta1[p11]!='\0')
-            {
-                printf("%c",pregunta1[p11]);
-                p11++;
-            }
+            pregunta11();
             printf("\n");
 
             for(i=0;i<5;i++)
@@ -136,46 +129,21 @@ int main()
 
                 if(dres<=0) //si el dinero que queda es 0 o menor
                 {
-                r1=fopen("respuesta11.txt","r");
-                fscanf(r1,"%[^'!']",respuesta1);
-                fclose(r1);
-                while(respuesta1[r11]!='\0')
-                {
-                    printf("%c",respuesta1[r11]);
-                    r11++;
-                }
-                printf("\n");
-                printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
+                    printf("\n");
+                    respuesta11();
+                    printf("\n");
+                    printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
                 }
                 else //si el dinero restante es mayor que 0
                 {
-                int reparticion2[5],dres1,correct2,p12=0,r12=0;
-                char pregunta2[500],respuesta2[500];
-                FILE *p2;
-                FILE *r2;
+                int reparticion2[5],dres1,correct2;
                 printf("\n");
-                r1=fopen("respuesta11.txt","r");
-                fscanf(r1,"%[^'!']",respuesta1);
-                fclose(r1);
-                while(respuesta1[r11]!='\0')
-                {
-                    printf("%c",respuesta1[r11]);
-                    r11++;
-                }
+                respuesta11();
                 printf("\n\n");
 
                 printf("Por lo tanto,te quedan %i euros\n",dres);
                 printf("\n");
-
-                p2=fopen("pregunta12.txt","r");
-                fscanf(p2,"%[^'.']",pregunta2);
-                fclose(p2);
-                while(pregunta2[p12]!='\0')
-                {
-                    printf("%c",pregunta2[p12]);
-                    p12++;
-
-                }
+                pregunta12();
                 printf("\n");
 
                 printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
@@ -190,47 +158,20 @@ int main()
                     if(dres1<=0)
                     {
                         printf("\n");
-                        r2=fopen("respuesta12.txt","r");
-                        fscanf(r2,"%[^';']",respuesta2);
-                        fclose(r2);
-                        while(respuesta2[r12]!='\0')
-                        {
-                            printf("%c",respuesta2[r12]);
-                            r12++;
-                        }
+                        respuesta12();
                         printf("\n\n");
                         printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                     }
                     else
                     {
-                        int reparticion3[5],dres2,correct3,p13=0,r13=0;
-                        char pregunta3[500],respuesta3[500];
-                        FILE *p3;
-                        FILE *r3;
+                        int reparticion3[5],dres2,correct3;
                          printf("\n");
-
-                        r2=fopen("respuesta12.txt","r");
-                        fscanf(r2,"%[^';']",respuesta2);
-                        fclose(r2);
-                        while(respuesta2[r12]!='\0')
-                        {
-                            printf("%c",respuesta2[r12]);
-                            r12++;
-                        }
+                        respuesta12();
                         printf("\n\n");
 
                         printf("Por lo tanto, te quedan %i euros\n",dres1);
                         printf("\n\n");
-
-                        p3=fopen("pregunta13.txt","r");
-                        fscanf(p3,"%[^'.']",pregunta3);
-                        fclose(p3);
-                        while(pregunta3[p13]!='\0')
-                        {
-                            printf("%c",pregunta3[p13]);
-                            p13++;
-
-                        }
+                        pregunta13();
                         printf("\n");
 
                         printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres1/1000);
@@ -244,47 +185,20 @@ int main()
                                 if(dres2<=0)
                                 {
                                     printf("\n");
-                                    r3=fopen("respuesta13.txt","r");
-                                    fscanf(r3,"%[^';']",respuesta3);
-                                    fclose(r3);
-                                    while(respuesta3[r13]!='\0')
-                                    {
-                                        printf("%c",respuesta3[r13]);
-                                        r13++;
-                                    }
+                                    respuesta13;
                                     printf("\n\n");
                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                                 }
                                 else
                                 {
-                                   int reparticion4[5],dres3,correct4,p14=0,r14=0;
-                                   char pregunta4[500],respuesta4[500];
-                                    FILE *p4;
-                                    FILE *r4;
+                                   int reparticion4[5],dres3,correct4;
                                     printf("\n");
-
-                                    r3=fopen("respuesta13.txt","r");
-                                    fscanf(r3,"%[^';']",respuesta3);
-                                    fclose(r3);
-                                    while(respuesta3[r13]!='\0')
-                                    {
-                                        printf("%c",respuesta3[r13]);
-                                        r13++;
-                                    }
+                                    respuesta13();
                                     printf("\n\n");
 
                                     printf("Despues de esta pregunta te quedan...%i euros",dres2);
                                     printf("\n\n");
-
-                                   p4=fopen("pregunta14.txt","r");
-                                    fscanf(p4,"%[^'.']",pregunta4);
-                                    fclose(p4);
-                                    while(pregunta4[p14]!='\0')
-                                    {
-                                        printf("%c",pregunta4[p14]);
-                                        p14++;
-
-                                    }
+                                    pregunta14();
                                     printf("\n");
 
                                     printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres2/1000);
@@ -298,29 +212,15 @@ int main()
                                             if(dres3<=0)
                                             {
                                                printf("\n");
-                                                r4=fopen("respuesta14.txt","r");
-                                                fscanf(r4,"%[^';']",respuesta4);
-                                                fclose(r4);
-                                                while(respuesta4[r14]!='\0')
-                                                {
-                                                    printf("%c",respuesta4[r14]);
-                                                    r14++;
-                                                }
+                                                respuesta14();
                                                 printf("\n\n");
                                                 printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
 
                                             }
                                             else
                                             {
-                                              r4=fopen("respuesta14.txt","r");
-                                                fscanf(r4,"%[^';']",respuesta4);
-                                                fclose(r4);
                                                 printf("\n");
-                                                while(respuesta4[r14]!='\0')
-                                                {
-                                                    printf("%c",respuesta4[r14]);
-                                                    r14++;
-                                                }
+                                                respuesta14();
                                                 printf("\n\n");
                                                 printf("Muy bien jugado, llegas al ecuador del juego con %i euros",dres3);
                                             }
@@ -391,4 +291,139 @@ int resta(int election[5],int correcta)
     return r;
 
 }
+
+
+void pregunta11()
+{
+    FILE *p1;
+    int p11=0;
+    char pregunta1[500];
+    p1=fopen("pregunta11.txt","r");
+    fscanf(p1,"%[^'.']",pregunta1);
+    fclose(p1);
+    while(pregunta1[p11]!='\0')
+    {
+        printf("%c",pregunta1[p11]);
+        p11++;
+    }
+}
+
+
+                    void respuesta11()
+                    {
+                        FILE *r1;
+                        int r11=0;
+                        char respuesta1[700];
+                        r1=fopen("respuesta11.txt","r");
+                        fscanf(r1,"%[^'!']",respuesta1);
+                        fclose(r1);
+                        while(respuesta1[r11]!='\0')
+                        {
+                            printf("%c",respuesta1[r11]);
+                            r11++;
+                        }
+                    }
+
+
+void pregunta12()
+{
+    FILE *p2;
+    int p12=0;
+    char pregunta2[500];
+    p2=fopen("pregunta12.txt","r");
+    fscanf(p2,"%[^'.']",pregunta2);
+    fclose(p2);
+    while(pregunta2[p12]!='\0')
+    {
+        printf("%c",pregunta2[p12]);
+        p12++;
+
+    }
+
+}
+
+
+                    void respuesta12()
+                    {
+                        FILE *r2;
+                        int r12=0;
+                        char respuesta2[500];
+                        r2=fopen("respuesta12.txt","r");
+                        fscanf(r2,"%[^';']",respuesta2);
+                        fclose(r2);
+                        while(respuesta2[r12]!='\0')
+                        {
+                            printf("%c",respuesta2[r12]);
+                            r12++;
+                        }
+
+                    }
+
+
+void pregunta13()
+{
+    FILE *p3;
+    int p13=0;
+    char pregunta3[500];
+    p3=fopen("pregunta13.txt","r");
+    fscanf(p3,"%[^'.']",pregunta3);
+    fclose(p3);
+    while(pregunta3[p13]!='\0')
+    {
+        printf("%c",pregunta3[p13]);
+        p13++;
+
+    }
+}
+
+
+                        void respuesta13()
+                        {
+                            FILE *r3;
+                            int r13=0;
+                            char respuesta3[500];
+                            r3=fopen("respuesta13.txt","r");
+                            fscanf(r3,"%[^';']",respuesta3);
+                            fclose(r3);
+                            while(respuesta3[r13]!='\0')
+                            {
+                                printf("%c",respuesta3[r13]);
+                                r13++;
+                            }
+                        }
+
+
+void pregunta14()
+{
+    FILE *p4;
+    int p14=0;
+    char pregunta4[500];
+    p4=fopen("pregunta14.txt","r");
+    fscanf(p4,"%[^'.']",pregunta4);
+    fclose(p4);
+    while(pregunta4[p14]!='\0')
+    {
+        printf("%c",pregunta4[p14]);
+        p14++;
+
+    }
+
+}
+
+
+                            void respuesta14()
+                            {
+                                FILE *r4;
+                                int r14=0;
+                                char respuesta4[500];
+                                r4=fopen("respuesta14.txt","r");
+                                fscanf(r4,"%[^';']",respuesta4);
+                                fclose(r4);
+                                while(respuesta4[r14]!='\0')
+                                {
+                                    printf("%c",respuesta4[r14]);
+                                    r14++;
+                                }
+                            }
+
 

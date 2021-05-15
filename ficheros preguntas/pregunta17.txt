@@ -1,0 +1,6 @@
+Ahora una pregunta para comprobar tus dotes botanicas, que es el tomate?
+A-->Hortaliza
+B-->Fruta
+C-->Verdura
+D-->Tuberculo
+E-->Carne.

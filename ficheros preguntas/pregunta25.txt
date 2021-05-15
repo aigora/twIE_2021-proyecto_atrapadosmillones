@@ -1,0 +1,6 @@
+A que animal deben su nombre las Islas Canarias?
+A-->Pez
+B-->Lagarto
+C-->Canario
+D-->Gato
+E-->Perro.

@@ -19,6 +19,16 @@ typedef struct //estructura que se usa al final para hacer un resumen de la juga
  void pregunta12(),respuesta12();
  void pregunta13(),respuesta13();
  void pregunta14(),respuesta14();
+ void pregunta15(),respuesta15();
+ void pregunta16(),respuesta16();
+ void pregunta17(),respuesta17();
+
+ void pregunta21(),respuesta21();
+ void pregunta22(),respuesta22();
+ void pregunta23(),respuesta23();
+ void pregunta24(),respuesta24();
+ void pregunta25(),respuesta25();
+ void pregunta26(),respuesta26();
 
 
 int main()
@@ -119,11 +129,11 @@ int main()
 
             for(i=0;i<5;i++)
                 scanf("%i",&reparticion1[i]); //el usuario introduce en cada componente del vector la cantidad de dinero que quiere introducir en cada opcion
-            correct1=reparticion1[1]; //respuesta correcta
+            correct1 = reparticion1[1]; //respuesta correcta
             //uso de las funciones
-            r=resta(reparticion1,correct1);
+            r = resta(reparticion1,correct1);
 
-            dres=drestante(50000,r);
+            dres = drestante(50000,r);
 
 
 
@@ -149,9 +159,9 @@ int main()
                 printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
                 for(i=0;i<5;i++)
                     scanf("%i",&reparticion2[i]);
-                correct2=reparticion2[3];
-                r=resta(reparticion2,correct2);
-                dres1=drestante(dres,r);
+                correct2 = reparticion2[3];
+                r = resta(reparticion2,correct2);
+                dres1 = drestante(dres,r);
 
 
 
@@ -177,9 +187,9 @@ int main()
                         printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres1/1000);
                         for(i=0;i<5;i++)
                             scanf("%i",&reparticion3[i]);
-                        correct3=reparticion3[1];
-                        r=resta(reparticion3,correct3);
-                        dres2=drestante(dres1,r);
+                        correct3 = reparticion3[1];
+                        r = resta(reparticion3,correct3);
+                        dres2 = drestante(dres1,r);
 
 
                                 if(dres2<=0)
@@ -204,9 +214,9 @@ int main()
                                     printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres2/1000);
                                     for(i=0;i<5;i++)
                                         scanf("%i",&reparticion4[i]);
-                                    correct4=reparticion4[3];
-                                    r=resta(reparticion4,correct4);
-                                    dres3=drestante(dres2,r);
+                                    correct4 = reparticion4[3];
+                                    r = resta(reparticion4,correct4);
+                                    dres3 = drestante(dres2,r);
 
 
                                             if(dres3<=0)
@@ -219,32 +229,103 @@ int main()
                                             }
                                             else
                                             {
+                                                int reparticion5[5],dres4,correct5;
                                                 printf("\n");
                                                 respuesta14();
                                                 printf("\n\n");
                                                 printf("Muy bien jugado, llegas al ecuador del juego con %i euros",dres3);
-                                            }
-                                }
+                                                printf("\n");
+
+                                                printf("Despues de esta pregunta te quedan...%i euros",dres4);
+                                                printf("\n\n");
+                                                pregunta15();
+                                                printf("\n");
+
+                                                printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres3/1000);
+                                                for(i=0;i<5;i++)
+                                                    scanf("%i",&reparticion5[i]);
+                                                correct5 = reparticion5[0];
+                                                r = resta(reparticion5,correct5);
+                                                dres4 = drestante(dres3,r);
+                                                printf("Despues de esta pregunta te quedan...%i euros",dres4);
+                                                printf("\n\n");
 
 
+                                                if(dres4<=0)
+                                                {
+                                                    printf("\n");
+                                                    respuesta15();
+                                                    printf("\n\n");
+                                                    printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
 
-                    }
+                                                }
+                                                else
+                                                {
+                                                    int reparticion6[5],dres5,correct6;
+                                                    printf("\n");
+                                                    respuesta15();
+                                                    printf("\n\n");
+                                                    printf("Y sigue el juego, continuas con %i euros",dres4);
+                                                    printf("\n\n");
+
+                                                    printf("Despues de esta pregunta te quedan...%i euros",dres5);
+                                                    printf("\n\n");
+                                                    pregunta16();
+                                                    printf("\n");
+
+                                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres4/1000);
+                                                    for(i=0;i<5;i++)
+                                                        scanf("%i",&reparticion6[i]);
+                                                    correct6 = reparticion6[3];
+                                                    r = resta(reparticion6,correct6);
+                                                    dres5 = drestante(dres4,r);
 
 
-                }
+                                                    if(dres5<=0)
+                                                    {
+                                                        printf("\n");
+                                                        respuesta16();
+                                                        printf("\n\n");
+                                                        printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+
+                                                    }
+                                                    else
+                                                    {
+                                                        int reparticion7[5],dres6,correct7;
+                                                        printf("\n");
+                                                        respuesta16();
+                                                        printf("\n\n");
+                                                        printf("Y llegas a la ultima pregunta con %i eurazos",dres5);
+                                                        printf("\n\n");
+
+                                                        printf("Despues de esta pregunta te quedan...%i euros",dres6);
+                                                        printf("\n\n");
+                                                        pregunta17();
+                                                        printf("\n");
+
+                                                        printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres5/1000);
+                                                        for(i=0;i<5;i++)
+                                                            scanf("%i",&reparticion7[i]);
+                                                        correct7 = reparticion7[1];
+                                                        r = resta(reparticion7,correct7);
+                                                        dres6 = drestante(dres5,r);
+
+                                                        printf("Has finalizado el juego con un premio de %d", dres6);
+                                                        printf("\n\n");
+                                                    }
+                                                }
+
+                                          }
 
 
+                                   }
 
+                     }
 
-
-
+             }
 
 
         }
-
-
-
-
 
 
         else if(dinicial==2)
@@ -427,3 +508,232 @@ void pregunta14()
                             }
 
 
+void pregunta15()
+{
+    FILE *p5;
+    int p15=0;
+    char pregunta5[500];
+    p5=fopen("pregunta15.txt","r");
+    fscanf(p5,"%[^'.']",pregunta5);
+    fclose(p5);
+    while(pregunta5[p15]!='\0')
+    {
+        printf("%c",pregunta5[p15]);
+        p15++;
+
+    }
+
+}
+
+
+                            void respuesta15()
+                            {
+                                FILE *r5;
+                                int r15=0;
+                                char respuesta5[500];
+                                r5=fopen("respuesta15.txt","r");
+                                fscanf(r5,"%[^';']",respuesta5);
+                                fclose(r5);
+                                while(respuesta5[r15]!='\0')
+                                {
+                                    printf("%c",respuesta5[r15]);
+                                    r15++;
+                                }
+                            }
+
+
+void pregunta16()
+{
+    FILE *p6;
+    int p16=0;
+    char pregunta6[500];
+    p6=fopen("pregunta16.txt","r");
+    fscanf(p6,"%[^'.']",pregunta6);
+    fclose(p6);
+    while(pregunta6[p16]!='\0')
+    {
+        printf("%c",pregunta6[p16]);
+        p16++;
+
+    }
+
+}
+                           void respuesta16()
+                            {
+                                FILE *r6;
+                                int r16=0;
+                                char respuesta6[500];
+                                r6=fopen("respuesta16.txt","r");
+                                fscanf(r6,"%[^'.']",respuesta6);
+                                fclose(r6);
+                                while(respuesta6[r16]!='\0')
+                                {
+                                    printf("%c",respuesta6[r16]);
+                                    r16++;
+                                }
+                            }
+
+
+void pregunta17()
+{
+    FILE *p7;
+    int p17=0;
+    char pregunta7[500];
+    p7=fopen("pregunta17.txt","r");
+    fscanf(p7,"%[^'.']",pregunta7);
+    fclose(p7);
+    while(pregunta7[p17]!='\0')
+    {
+        printf("%c",pregunta7[p17]);
+        p17++;
+
+    }
+
+}
+
+                           void respuesta17()
+                            {
+                                FILE *r7;
+                                int r17=0;
+                                char respuesta7[500];
+                                r7=fopen("respuesta17.txt","r");
+                                fscanf(r7,"%[^'.']",respuesta7);
+                                fclose(r7);
+                                while(respuesta7[r17]!='\0')
+                                {
+                                    printf("%c",respuesta7[r17]);
+                                    r17++;
+                                }
+                            }
+
+
+   void pregunta24()
+{
+    FILE *pr4;
+    int pr24=0;
+    char pregunta4[500];
+    pr24=fopen("pregunta24.txt","r");
+    fscanf(pr4,"%[^'.']",pregunta4);
+    fclose(pr4);
+    while(pregunta4[pr24]!='\0')
+    {
+        printf("%c",pregunta4[pr24]);
+        pr24++;
+
+    }
+
+}
+
+                            void respuesta24()
+                            {
+                                FILE *re4;
+                                int re24=0;
+                                char respuesta4[500];
+                                re4=fopen("respuesta24.txt","r");
+                                fscanf(re4,"%[^'.']",respuesta4);
+                                fclose(re4);
+                                while(respuesta4[re24]!='\0')
+                                {
+                                    printf("%c",respuesta4[re24]);
+                                    re24++;
+                                }
+                            }
+
+
+  void pregunta25()
+{
+    FILE *pr5;
+    int pr25=0;
+    char pregunta5[500];
+    pr25=fopen("pregunta25.txt","r");
+    fscanf(pr5,"%[^'.']",pregunta5);
+    fclose(pr5);
+    while(pregunta5[pr25]!='\0')
+    {
+        printf("%c",pregunta5[pr25]);
+        pr25++;
+
+    }
+
+}
+
+                            void respuesta25()
+                            {
+                                FILE *re5;
+                                int re25=0;
+                                char respuesta5[500];
+                                re5=fopen("respuesta25.txt","r");
+                                fscanf(re5,"%[^'.']",respuesta5);
+                                fclose(re5);
+                                while(respuesta5[re25]!='\0')
+                                {
+                                    printf("%c",respuesta5[re25]);
+                                    re25++;
+                                }
+                            }
+
+
+void pregunta26()
+{
+    FILE *pr6;
+    int pr26=0;
+    char pregunta6[500];
+    pr26=fopen("pregunta26.txt","r");
+    fscanf(pr6,"%[^'.']",pregunta6);
+    fclose(pr6);
+    while(pregunta6[pr26]!='\0')
+    {
+        printf("%c",pregunta6[pr26]);
+        pr26++;
+
+    }
+
+}
+
+                            void respuesta26()
+                            {
+                                FILE *re6;
+                                int re26=0;
+                                char respuesta6[500];
+                                re6=fopen("respuesta26.txt","r");
+                                fscanf(re6,"%[^')']",respuesta6);
+                                fclose(re6);
+                                while(respuesta6[re26]!='\0')
+                                {
+                                    printf("%c",respuesta6[re26]);
+                                    re26++;
+                                }
+                            }
+
+
+    void pregunta27()
+{
+    FILE *pr7;
+    int pr27=0;
+    char pregunta7[500];
+    pr27=fopen("pregunta27.txt","r");
+    fscanf(pr7,"%[^'.']",pregunta7);
+    fclose(pr7);
+    while(pregunta7[pr27]!='\0')
+    {
+        printf("%c",pregunta7[pr27]);
+        pr27++;
+
+    }
+
+}
+
+                           void respuesta27()
+                            {
+                                FILE *re7;
+                                int re27=0;
+                                char respuesta7[500];
+                                re7=fopen("respuesta27.txt","r");
+                                fscanf(re7,"%[^'.']",respuesta7);
+                                fclose(re7);
+                                while(respuesta7[re27]!='\0')
+                                {
+                                    printf("%c",respuesta7[re27]);
+                                    re27++;
+                                }
+                            }

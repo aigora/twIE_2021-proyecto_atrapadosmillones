@@ -619,6 +619,104 @@ void pregunta17()
                             }
 
 
+void pregunta21()
+{
+    FILE *pr1;
+    int pr21=0;
+    char ppregunta1[500];
+    pr1=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta21.txt","r");
+    fscanf(pr1,"%[^'.']",ppregunta1);
+    fclose(pr1);
+    while(ppregunta1[pr21]!='\0')
+    {
+        printf("%c",ppregunta1[pr21]);
+        pr21++;
+
+    }
+
+}
+
+                                void respuesta21()
+                            {
+                                FILE *re1;
+                                int re21=0;
+                                char rrespuesta1[500];
+                                re1=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta21.txt","r");
+                                fscanf(re1,"%[^'.']",rrespuesta1);
+                                fclose(re1);
+                                while(rrespuesta1[re21]!='\0')
+                                {
+                                    printf("%c",rrespuesta1[re21]);
+                                    re21++;
+                                }
+                            }
+
+ void pregunta22()
+{
+    FILE *pr2;
+    int pr22=0;
+    char ppregunta2[500];
+    pr2=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta22.txt","r");
+    fscanf(pr2,"%[^'.']",ppregunta2);
+    fclose(pr2);
+    while(ppregunta2[pr22]!='\0')
+    {
+        printf("%c",ppregunta2[pr22]);
+        pr22++;
+
+    }
+
+}
+
+                                void respuesta22()
+                            {
+                                FILE *re2;
+                                int re22=0;
+                                char rrespuesta2[500];
+                                re2=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta22.txt","r");
+                                fscanf(re2,"%[^'.']",rrespuesta2);
+                                fclose(re2);
+                                while(rrespuesta2[re22]!='\0')
+                                {
+                                    printf("%c",rrespuesta2[re22]);
+                                    re22++;
+                                }
+                            }
+
+ void pregunta23()
+{
+    FILE *pr3;
+    int pr23=0;
+    char ppregunta3[500];
+    pr3=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta23.txt","r");
+    fscanf(pr3,"%[^'.']",ppregunta3);
+    fclose(pr3);
+    while(ppregunta3[pr23]!='\0')
+    {
+        printf("%c",ppregunta3[pr23]);
+        pr23++;
+
+    }
+
+}
+
+                                void respuesta23()
+                            {
+                                FILE *re3;
+                                int re23=0;
+                                char rrespuesta3[500];
+                                re3=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta23.txt","r");
+                                fscanf(re3,"%[^'.']",rrespuesta3);
+                                fclose(re3);
+                                while(rrespuesta3[re23]!='\0')
+                                {
+                                    printf("%c",rrespuesta3[re23]);
+                                    re23++;
+                                }
+                            }
+
+
+
    void pregunta24()
 {
     FILE *pr4;

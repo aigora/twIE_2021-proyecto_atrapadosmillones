@@ -1,0 +1,8 @@
+Empecemos tu aventura con la primera pregunta:
+Cual es la moneda de Marruecos?
+Opcion A-->Markhs
+Opcion B-->Rublo
+Opcion C-->Fulhio
+Opcion D-->Rand
+Opcion E-->Dirham
+Selecciona cuantos fajos de billetes quieres poner en cada una de las respuestas (en total tienes 100 fajos).

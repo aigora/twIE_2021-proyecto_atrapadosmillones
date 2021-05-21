@@ -340,9 +340,229 @@ int main()
         }
 
 
-        else if(dinicial==2)
+
+            else if(dinicial==2)
         {
+            int reparticion21[5];
+            int i,r,dres,correct21;
             printf("Perfecto, empiezas el juego con 100k euros.\n");
+            printf("\n");
+            pregunta21();
+            printf("\n\n");
+
+            for(i=0;i<5;i++)
+                scanf("%i",&reparticion21[i]); //el usuario introduce en cada componente del vector la cantidad de dinero que quiere introducir en cada opcion
+            correct21 = reparticion21[4];
+            //uso de las funciones
+            r = resta(reparticion21,correct21);
+
+            dres = drestante(100000,r);
+
+                if(dres<=0) //si el dinero que queda es 0 o menor
+                {
+                    printf("\n");
+                    respuesta21();
+                    printf("\n");
+                    printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
+                }
+                else //si el dinero restante es mayor que 0
+                {
+                int reparticion22[5],dres1,correct22;
+                printf("\n");
+                respuesta21();
+                printf("\n\n");
+
+                printf("Por lo tanto,te quedan %i euros\n",dres);
+                printf("\n");
+                pregunta22();
+                printf("\n");
+
+                printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                for(i=0;i<5;i++)
+                    scanf("%i",&reparticion22[i]);
+                correct22 = reparticion22[4];///cambiar
+                r = resta(reparticion22,correct22);
+                dres1 = drestante(dres,r);///hace llamada a la funcion drestante que calcula el dinero que le queda a partir de esa pregunta
+
+
+
+                        if(dres1<=0) //si el dinero que queda es 0 o menor
+                        {
+                            printf("\n");
+                            respuesta22();
+                            printf("\n");
+                            printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                        }
+                        else //si el dinero restante es mayor que 0
+                        {
+                            int reparticion23[5],dres2,correct23;
+                            printf("\n");
+                            respuesta22();
+                            printf("\n\n");
+
+                            printf("Por lo tanto,te quedan %i euros\n",dres);
+                            printf("\n");
+                            pregunta23();
+                            printf("\n");
+
+                            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                            for(i=0;i<5;i++)
+                                scanf("%i",&reparticion23[i]);
+                            correct23 = reparticion23[3];
+                            r = resta(reparticion23,correct23);
+                            dres2 = drestante(dres1,r);
+
+
+                                if(dres2<=0) //si el dinero que queda es 0 o menor
+                                {
+                                    printf("\n");
+                                    respuesta23();
+                                    printf("\n");
+                                    printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                }
+                                else //si el dinero restante es mayor que 0
+                                {
+                                    int reparticion24[5],dres3,correct24;
+                                    printf("\n");
+                                    respuesta23();
+                                    printf("\n\n");
+
+                                    printf("Por lo tanto,te quedan %i euros\n",dres);
+                                    printf("\n");
+                                    pregunta24();
+                                    printf("\n");
+
+                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 2k (en total te quedan %i fajos)\n",dres/1000);
+                                    for(i=0;i<5;i++)
+                                        scanf("%i",&reparticion24[i]);
+                                    correct24 = reparticion24[1];
+                                    r = resta(reparticion24,correct24);
+                                    dres3 = drestante(dres2,r);
+
+
+                                    if(dres3<=0)
+                                    {
+                                        printf("\n");
+                                        //respuesta24;
+                                        printf("\n\n");
+                                        printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                    }
+                                    else
+                                    {
+                                        int reparticion25[5],dres4,correct25;
+                                        printf("\n");
+                                        respuesta24();
+                                        printf("\n\n");
+
+                                        printf("Despues de esta pregunta te quedan...%i euros",dres4);
+                                        printf("\n\n");
+                                        pregunta25();
+                                        printf("\n");
+
+                                        printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres2/1000);
+                                        for(i=0;i<5;i++)
+                                            scanf("%i",&reparticion25[i]);
+                                        correct25 = reparticion25[4];
+                                        r = resta(reparticion25,correct25);
+                                        dres4 = drestante(dres3,r);
+
+
+
+                                                if(dres4<=0) //si el dinero que queda es 0 o menor
+                                                {
+                                                    printf("\n");
+                                                    respuesta25();
+                                                    printf("\n");
+                                                    printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                }
+                                                else //si el dinero restante es mayor que 0
+                                                {
+                                                    int reparticion26[5],dres5,correct26;
+                                                    printf("\n");
+                                                    respuesta25();
+                                                    printf("\n\n");
+
+                                                    printf("Por lo tanto,te quedan %i euros\n",dres);
+                                                    printf("\n");
+                                                    pregunta26();
+                                                    printf("\n");
+
+                                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                                                    for(i=0;i<5;i++)
+                                                        scanf("%i",&reparticion26[i]);
+                                                    correct26 = reparticion26[3];
+                                                    r = resta(reparticion26,correct26);
+                                                    dres5 = drestante(dres4,r);
+
+
+
+                                                        if(dres5<=0) //si el dinero que queda es 0 o menor
+                                                        {
+                                                            printf("\n");
+                                                            respuesta26();
+                                                            printf("\n");
+                                                            printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                        }
+                                                        else //si el dinero restante es mayor que 0
+                                                        {
+                                                            int reparticion27[5],dres6,correct27;
+                                                            printf("\n");
+                                                            respuesta26();
+                                                            printf("\n\n");
+
+                                                            printf("Por lo tanto,te quedan %i euros\n",dres);
+                                                            printf("\n");
+                                                            pregunta27();
+                                                            printf("\n");
+
+                                                            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                                                            for(i=0;i<5;i++)
+                                                                scanf("%i",&reparticion27[i]);
+                                                            correct27 = reparticion27[1];
+                                                            r = resta(reparticion27,correct27);
+                                                            dres6 = drestante(dres5,r);
+
+
+
+                                                                if(dres6<=0)
+                                                                {
+                                                                    printf("\n");
+                                                                    respuesta27();
+                                                                    printf("\n\n");
+                                                                    printf("No me lo puedo creer %s, has dejado escapar todo el dinero en la ultima pregunta. Seguro que la proxima vez tienes mas suerte!",u.usuario);
+                                                                }
+                                                                else
+                                                                {
+                                                                    premio v,p;
+                                                                    v.perdidas[0]=50000-dres;
+                                                                    v.perdidas[1]=dres-dres1;
+                                                                    v.perdidas[2]=dres1-dres2;
+                                                                    v.perdidas[3]=dres2-dres3;
+                                                                    v.perdidas[4]=dres3-dres4;
+                                                                    v.perdidas[5]=dres4-dres5;
+                                                                    v.perdidas[6]=dres5-dres6;
+
+                                                                    p.fin=dres6;
+                                                                    printf("\n");
+                                                                    printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",p.fin);
+                                                                    printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
+                                                                    printf("En la primera pregunta has perdido %d euros y en la segunda has perdido %d euros mientras que en la tercera\nte has dejado %d. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],v.perdidas[1],v.perdidas[2],v.perdidas[3],v.perdidas[4],v.perdidas[5]);
+                                                                }
+                                                        }
+
+                                                }
+
+                                        }
+
+                                }
+
+                        }
+
+                }
+
+
+
+
         }
 
 

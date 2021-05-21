@@ -324,22 +324,13 @@ int main()
                                                                                                         printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
                                                                                                         printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],v.perdidas[1],v.perdidas[2],v.perdidas[3],v.perdidas[4],v.perdidas[5],v.perdidas[6]);
                                                                                                     }
-                                                    }
-                                                }
-
-                                          }
-
-
-                                   }
-
-                     }
-
-             }
-
-
-        }
-
-
+}
+}
+}
+}
+}
+}
+}
 
             else if(dinicial==2)
         {
@@ -380,9 +371,9 @@ int main()
                 printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
                 for(i=0;i<5;i++)
                     scanf("%i",&reparticion22[i]);
-                correct22 = reparticion22[4];///cambiar
+                correct22 = reparticion22[4];//cambiar
                 r = resta(reparticion22,correct22);
-                dres1 = drestante(dres,r);///hace llamada a la funcion drestante que calcula el dinero que le queda a partir de esa pregunta
+                dres1 = drestante(dres,r);//hace llamada a la funcion drestante que calcula el dinero que le queda a partir de esa pregunta
 
 
 
@@ -405,7 +396,7 @@ int main()
                             pregunta23();
                             printf("\n");
 
-                            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres1/1000);
                             for(i=0;i<5;i++)
                                 scanf("%i",&reparticion23[i]);
                             correct23 = reparticion23[3];
@@ -432,7 +423,7 @@ int main()
                                     pregunta24();
                                     printf("\n");
 
-                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 2k (en total te quedan %i fajos)\n",dres/1000);
+                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 2k (en total te quedan %i fajos)\n",dres2/1000);
                                     for(i=0;i<5;i++)
                                         scanf("%i",&reparticion24[i]);
                                     correct24 = reparticion24[1];
@@ -459,7 +450,7 @@ int main()
                                         pregunta25();
                                         printf("\n");
 
-                                        printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres2/1000);
+                                        printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres3/1000);
                                         for(i=0;i<5;i++)
                                             scanf("%i",&reparticion25[i]);
                                         correct25 = reparticion25[4];
@@ -487,7 +478,7 @@ int main()
                                                     pregunta26();
                                                     printf("\n");
 
-                                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                                                    printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres4/1000);
                                                     for(i=0;i<5;i++)
                                                         scanf("%i",&reparticion26[i]);
                                                     correct26 = reparticion26[3];
@@ -515,7 +506,7 @@ int main()
                                                             pregunta27();
                                                             printf("\n");
 
-                                                            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
+                                                            printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres5/1000);
                                                             for(i=0;i<5;i++)
                                                                 scanf("%i",&reparticion27[i]);
                                                             correct27 = reparticion27[1];
@@ -605,7 +596,7 @@ int resta(int election[5],int correcta)
 
 }
 
-
+//funciones recorren ficheros para imprimir en pantalla las preguntas
 void pregunta11()
 {
     FILE *p1;

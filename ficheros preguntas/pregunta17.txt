@@ -1,4 +1,4 @@
-Ahora una pregunta para comprobar tus dotes botanicas, que es el tomate?
+Ahora y para terminar;una pregunta para comprobar tus dotes botanicas, que es el tomate?
 A-->Hortaliza
 B-->Fruta
 C-->Verdura

@@ -1,4 +1,5 @@
-Parece que eres bueno, veamos que tal te desenvuelves con geologia: Cual es el nombre de la epoca geologica en la que nos encontramos actualmente?
+Parece que eres bueno, veamos que tal te desenvuelves con geologia en esta ultima pregunta:
+Cual es el nombre de la epoca geologica en la que nos encontramos actualmente?
 A-->Pleistoceno
 B-->Holoceno
 C-->Jurasico

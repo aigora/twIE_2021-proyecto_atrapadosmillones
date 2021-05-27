@@ -321,7 +321,7 @@ int main()
                                                                                                         printf("\n");
                                                                                                         printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
                                                                                                         printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
-                                                                                                        printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
+                                                                                                        printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                                                     }
 }
 }
@@ -526,7 +526,7 @@ int main()
                                                                     premio p[1];
                                                                     p[0]= (premio) {100000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                     printf("\n");
-                                                                    printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",p.fin);
+                                                                    printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
                                                                     printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
                                                                     printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                 }

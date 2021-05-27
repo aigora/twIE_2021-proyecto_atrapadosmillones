@@ -370,7 +370,7 @@ int main()
                 printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
                 for(i=0;i<5;i++)
                     scanf("%i",&reparticion22[i]);
-                correct22 = reparticion22[4];//cambiar
+                correct22 = reparticion22[4];
                 r = resta(reparticion22,correct22);
                 dres1 = drestante(dres,r);//hace llamada a la funcion drestante que calcula el dinero que le queda a partir de esa pregunta
 

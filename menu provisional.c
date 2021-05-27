@@ -9,8 +9,13 @@ typedef struct //estructura para  identificar a la persona que usa el programa
 
 typedef struct //estructura que se usa al final para hacer un resumen de la jugada diciendo el dinero que ha perdido en cada pregunta y el dinero ganado
 {
-    int perdidas[6];
-    int fin;
+    int per1;
+    int per2;
+    int per3;
+    int per4;
+    int per5;
+    int per6;
+    int per7;
 }premio;
 
  int drestante(int d,int r); //funcion que calcula el dinero restante despues de cada pregunta
@@ -311,19 +316,12 @@ int main()
 
                                                                                                     else
                                                                                                     {
-                                                                                                         premio v,p;
-                                                                                                        v.perdidas[0]=50000-dres;
-                                                                                                        v.perdidas[1]=dres-dres1;
-                                                                                                        v.perdidas[2]=dres1-dres2;
-                                                                                                        v.perdidas[3]=dres2-dres3;
-                                                                                                        v.perdidas[4]=dres3-dres4;
-                                                                                                        v.perdidas[5]=dres4-dres5;
-                                                                                                        v.perdidas[6]=dres5-dres6;
-                                                                                                        p.fin=dres6;
+                                                                                                        premio p[1];
+                                                                                                        p[0]= (premio) {50000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                                                         printf("\n");
-                                                                                                        printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",p.fin);
+                                                                                                        printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
                                                                                                         printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
-                                                                                                        printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],v.perdidas[1],v.perdidas[2],v.perdidas[3],v.perdidas[4],v.perdidas[5],v.perdidas[6]);
+                                                                                                        printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                                                     }
 }
 }
@@ -435,7 +433,7 @@ int main()
                                     if(dres3<=0)
                                     {
                                         printf("\n");
-                                        //respuesta24;
+                                        respuesta24();
                                         printf("\n\n");
                                         printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                                     }
@@ -525,20 +523,12 @@ int main()
                                                                 }
                                                                 else
                                                                 {
-                                                                    premio v,p;
-                                                                    v.perdidas[0]=100000-dres;
-                                                                    v.perdidas[1]=dres-dres1;
-                                                                    v.perdidas[2]=dres1-dres2;
-                                                                    v.perdidas[3]=dres2-dres3;
-                                                                    v.perdidas[4]=dres3-dres4;
-                                                                    v.perdidas[5]=dres4-dres5;
-                                                                    v.perdidas[6]=dres5-dres6;
-
-                                                                    p.fin=dres6;
+                                                                    premio p[1];
+                                                                    p[0]= (premio) {100000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                     printf("\n");
                                                                     printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",p.fin);
                                                                     printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
-                                                                    printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],v.perdidas[1],v.perdidas[2],v.perdidas[3],v.perdidas[4],v.perdidas[5],v.perdidas[6]);
+                                                                    printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                 }
 }
 }

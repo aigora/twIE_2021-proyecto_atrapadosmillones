@@ -29,6 +29,7 @@ typedef struct //estructura que se usa al final para hacer un resumen de la juga
  void pregunta24(),respuesta24();
  void pregunta25(),respuesta25();
  void pregunta26(),respuesta26();
+ void pregunta27(),respuesta27();
 
 
 int main()
@@ -195,7 +196,7 @@ int main()
                                 if(dres2<=0)
                                 {
                                     printf("\n");
-                                    respuesta13;
+                                    respuesta13();
                                     printf("\n\n");
                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
                                 }
@@ -391,7 +392,7 @@ int main()
                             respuesta22();
                             printf("\n\n");
 
-                            printf("Por lo tanto,te quedan %i euros\n",dres);
+                            printf("Por lo tanto,te quedan %i euros\n",dres1);
                             printf("\n");
                             pregunta23();
                             printf("\n");
@@ -418,7 +419,7 @@ int main()
                                     respuesta23();
                                     printf("\n\n");
 
-                                    printf("Por lo tanto,te quedan %i euros\n",dres);
+                                    printf("Por lo tanto,te quedan %i euros\n",dres2);
                                     printf("\n");
                                     pregunta24();
                                     printf("\n");
@@ -445,7 +446,7 @@ int main()
                                         respuesta24();
                                         printf("\n\n");
 
-                                        printf("Despues de esta pregunta te quedan...%i euros",dres4);
+                                        printf("Despues de esta pregunta te quedan...%i euros",dres3);
                                         printf("\n\n");
                                         pregunta25();
                                         printf("\n");
@@ -473,7 +474,7 @@ int main()
                                                     respuesta25();
                                                     printf("\n\n");
 
-                                                    printf("Por lo tanto,te quedan %i euros\n",dres);
+                                                    printf("Por lo tanto,te quedan %i euros\n",dres4);
                                                     printf("\n");
                                                     pregunta26();
                                                     printf("\n");
@@ -501,7 +502,7 @@ int main()
                                                             respuesta26();
                                                             printf("\n\n");
 
-                                                            printf("Por lo tanto,te quedan %i euros\n",dres);
+                                                            printf("Por lo tanto,te quedan %i euros\n",dres5);
                                                             printf("\n");
                                                             pregunta27();
                                                             printf("\n");
@@ -525,7 +526,7 @@ int main()
                                                                 else
                                                                 {
                                                                     premio v,p;
-                                                                    v.perdidas[0]=50000-dres;
+                                                                    v.perdidas[0]=100000-dres;
                                                                     v.perdidas[1]=dres-dres1;
                                                                     v.perdidas[2]=dres1-dres2;
                                                                     v.perdidas[3]=dres2-dres3;
@@ -537,24 +538,15 @@ int main()
                                                                     printf("\n");
                                                                     printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",p.fin);
                                                                     printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
-                                                                    printf("En la primera pregunta has perdido %d euros y en la segunda has perdido %d euros mientras que en la tercera\nte has dejado %d. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],v.perdidas[1],v.perdidas[2],v.perdidas[3],v.perdidas[4],v.perdidas[5]);
+                                                                    printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",v.perdidas[0],v.perdidas[1],v.perdidas[2],v.perdidas[3],v.perdidas[4],v.perdidas[5],v.perdidas[6]);
                                                                 }
-                                                        }
-
-                                                }
-
-                                        }
-
-                                }
-
-                        }
-
-                }
-
-
-
-
-        }
+}
+}
+}
+}
+}
+}
+}
 
 
 

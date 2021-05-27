@@ -584,7 +584,7 @@ void pregunta11()
     FILE *p1;
     int p11=0;
     char pregunta1[500];
-    p1=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta11.txt","r");
+    p1=fopen("ficheros preguntas/pregunta11.txt","r");
     fscanf(p1,"%[^'.']",pregunta1);
     fclose(p1);
     while(pregunta1[p11]!='\0')
@@ -600,7 +600,7 @@ void pregunta11()
                         FILE *r1;
                         int r11=0;
                         char respuesta1[700];
-                        r1=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta11.txt","r");
+                        r1=fopen("ficheros respuestas/respuesta11.txt","r");
                         fscanf(r1,"%[^'!']",respuesta1);
                         fclose(r1);
                         while(respuesta1[r11]!='\0')
@@ -616,7 +616,7 @@ void pregunta12()
     FILE *p2;
     int p12=0;
     char pregunta2[500];
-    p2=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta12.txt","r");
+    p2=fopen("ficheros preguntas/pregunta12.txt","r");
     fscanf(p2,"%[^'.']",pregunta2);
     fclose(p2);
     while(pregunta2[p12]!='\0')
@@ -634,7 +634,7 @@ void pregunta12()
                         FILE *r2;
                         int r12=0;
                         char respuesta2[500];
-                        r2=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta12.txt","r");
+                        r2=fopen("ficheros respuestas/respuesta12.txt","r");
                         fscanf(r2,"%[^';']",respuesta2);
                         fclose(r2);
                         while(respuesta2[r12]!='\0')
@@ -651,7 +651,7 @@ void pregunta13()
     FILE *p3;
     int p13=0;
     char pregunta3[500];
-    p3=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta13.txt","r");
+    p3=fopen("ficheros preguntas/pregunta13.txt","r");
     fscanf(p3,"%[^'.']",pregunta3);
     fclose(p3);
     while(pregunta3[p13]!='\0')
@@ -668,7 +668,7 @@ void pregunta13()
                             FILE *r3;
                             int r13=0;
                             char respuesta3[500];
-                            r3=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta13.txt","r");
+                            r3=fopen("ficheros respuestas/respuesta13.txt","r");
                             fscanf(r3,"%[^';']",respuesta3);
                             fclose(r3);
                             while(respuesta3[r13]!='\0')
@@ -684,7 +684,7 @@ void pregunta14()
     FILE *p4;
     int p14=0;
     char pregunta4[500];
-    p4=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta14.txt","r");
+    p4=fopen("ficheros preguntas/pregunta14.txt","r");
     fscanf(p4,"%[^'.']",pregunta4);
     fclose(p4);
     while(pregunta4[p14]!='\0')
@@ -702,7 +702,7 @@ void pregunta14()
                                 FILE *r4;
                                 int r14=0;
                                 char respuesta4[500];
-                                r4=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta14.txt","r");
+                                r4=fopen("ficheros respuestas/respuesta14.txt","r");
                                 fscanf(r4,"%[^';']",respuesta4);
                                 fclose(r4);
                                 while(respuesta4[r14]!='\0')
@@ -718,7 +718,7 @@ void pregunta15()
     FILE *p5;
     int p15=0;
     char pregunta5[500];
-    p5=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta15.txt","r");
+    p5=fopen("ficheros preguntas/pregunta15.txt","r");
     fscanf(p5,"%[^'.']",pregunta5);
     fclose(p5);
     while(pregunta5[p15]!='\0')
@@ -736,7 +736,7 @@ void pregunta15()
                                 FILE *r5;
                                 int r15=0;
                                 char respuesta5[500];
-                                r5=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta15.txt","r");
+                                r5=fopen("ficheros respuestas/respuesta15.txt","r");
                                 fscanf(r5,"%[^';']",respuesta5);
                                 fclose(r5);
                                 while(respuesta5[r15]!='\0')
@@ -752,7 +752,7 @@ void pregunta16()
     FILE *p6;
     int p16=0;
     char pregunta6[500];
-    p6=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta16.txt","r");
+    p6=fopen("ficheros preguntas/pregunta16.txt","r");
     fscanf(p6,"%[^'.']",pregunta6);
     fclose(p6);
     while(pregunta6[p16]!='\0')
@@ -768,7 +768,7 @@ void pregunta16()
                                 FILE *r6;
                                 int r16=0;
                                 char respuesta6[500];
-                                r6=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta16.txt","r");
+                                r6=fopen("ficheros respuestas/respuesta16.txt","r");
                                 fscanf(r6,"%[^'.']",respuesta6);
                                 fclose(r6);
                                 while(respuesta6[r16]!='\0')
@@ -784,7 +784,7 @@ void pregunta17()
     FILE *p7;
     int p17=0;
     char pregunta7[500];
-    p7=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta17.txt","r");
+    p7=fopen("ficheros preguntas/pregunta17.txt","r");
     fscanf(p7,"%[^'.']",pregunta7);
     fclose(p7);
     while(pregunta7[p17]!='\0')
@@ -801,7 +801,7 @@ void pregunta17()
                                 FILE *r7;
                                 int r17=0;
                                 char respuesta7[500];
-                                r7=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta17.txt","r");
+                                r7=fopen("ficheros respuestas/respuesta17.txt","r");
                                 fscanf(r7,"%[^'.']",respuesta7);
                                 fclose(r7);
                                 while(respuesta7[r17]!='\0')
@@ -817,7 +817,7 @@ void pregunta21()
     FILE *pr1;
     int pr21=0;
     char ppregunta1[500];
-    pr1=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta21.txt","r");
+    pr1=fopen("ficheros preguntas/pregunta21.txt","r");
     fscanf(pr1,"%[^'.']",ppregunta1);
     fclose(pr1);
     while(ppregunta1[pr21]!='\0')
@@ -834,7 +834,7 @@ void pregunta21()
                                 FILE *re1;
                                 int re21=0;
                                 char rrespuesta1[500];
-                                re1=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta21.txt","r");
+                                re1=fopen("ficheros respuestas/respuesta21.txt","r");
                                 fscanf(re1,"%[^'.']",rrespuesta1);
                                 fclose(re1);
                                 while(rrespuesta1[re21]!='\0')
@@ -849,7 +849,7 @@ void pregunta21()
     FILE *pr2;
     int pr22=0;
     char ppregunta2[500];
-    pr2=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta22.txt","r");
+    pr2=fopen("ficheros preguntas/pregunta22.txt","r");
     fscanf(pr2,"%[^'.']",ppregunta2);
     fclose(pr2);
     while(ppregunta2[pr22]!='\0')
@@ -866,7 +866,7 @@ void pregunta21()
                                 FILE *re2;
                                 int re22=0;
                                 char rrespuesta2[500];
-                                re2=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta22.txt","r");
+                                re2=fopen("ficheros respuestas/respuesta22.txt","r");
                                 fscanf(re2,"%[^'.']",rrespuesta2);
                                 fclose(re2);
                                 while(rrespuesta2[re22]!='\0')
@@ -881,7 +881,7 @@ void pregunta21()
     FILE *pr3;
     int pr23=0;
     char ppregunta3[500];
-    pr3=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta23.txt","r");
+    pr3=fopen("ficheros preguntas/pregunta23.txt","r");
     fscanf(pr3,"%[^'.']",ppregunta3);
     fclose(pr3);
     while(ppregunta3[pr23]!='\0')
@@ -898,7 +898,7 @@ void pregunta21()
                                 FILE *re3;
                                 int re23=0;
                                 char rrespuesta3[500];
-                                re3=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta23.txt","r");
+                                re3=fopen("ficheros respuestas/respuesta23.txt","r");
                                 fscanf(re3,"%[^'.']",rrespuesta3);
                                 fclose(re3);
                                 while(rrespuesta3[re23]!='\0')
@@ -915,7 +915,7 @@ void pregunta21()
     FILE *pr4;
     int pr24=0;
     char pregunta4[500];
-    pr4=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta24.txt","r");
+    pr4=fopen("ficheros preguntas/pregunta24.txt","r");
     fscanf(pr4,"%[^'.']",pregunta4);
     fclose(pr4);
     while(pregunta4[pr24]!='\0')
@@ -932,7 +932,7 @@ void pregunta21()
                                 FILE *re4;
                                 int re24=0;
                                 char respuesta4[500];
-                                re4=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta24.txt","r");
+                                re4=fopen("ficheros respuestas/respuesta24.txt","r");
                                 fscanf(re4,"%[^'.']",respuesta4);
                                 fclose(re4);
                                 while(respuesta4[re24]!='\0')
@@ -948,7 +948,7 @@ void pregunta21()
     FILE *pr5;
     int pr25=0;
     char pregunta5[500];
-    pr5=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta25.txt","r");
+    pr5=fopen("ficheros preguntas/pregunta25.txt","r");
     fscanf(pr5,"%[^'.']",pregunta5);
     fclose(pr5);
     while(pregunta5[pr25]!='\0')
@@ -965,7 +965,7 @@ void pregunta21()
                                 FILE *re5;
                                 int re25=0;
                                 char respuesta5[500];
-                                re5=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta25.txt","r");
+                                re5=fopen("ficheros respuestas/respuesta25.txt","r");
                                 fscanf(re5,"%[^'.']",respuesta5);
                                 fclose(re5);
                                 while(respuesta5[re25]!='\0')
@@ -981,7 +981,7 @@ void pregunta26()
     FILE *pr6;
     int pr26=0;
     char pregunta6[500];
-    pr6=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta26.txt","r");
+    pr6=fopen("ficheros preguntas/pregunta26.txt","r");
     fscanf(pr6,"%[^'.']",pregunta6);
     fclose(pr6);
     while(pregunta6[pr26]!='\0')
@@ -998,7 +998,7 @@ void pregunta26()
                                 FILE *re6;
                                 int re26=0;
                                 char respuesta6[500];
-                                re6=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta26.txt","r");
+                                re6=fopen("ficheros respuestas/respuesta26.txt","r");
                                 fscanf(re6,"%[^')']",respuesta6);
                                 fclose(re6);
                                 while(respuesta6[re26]!='\0')
@@ -1014,7 +1014,7 @@ void pregunta26()
     FILE *pr7;
     int pr27=0;
     char pregunta7[500];
-    pr7=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros preguntas/pregunta27.txt","r");
+    pr7=fopen("ficheros preguntas/pregunta27.txt","r");
     fscanf(pr7,"%[^'.']",pregunta7);
     fclose(pr7);
     while(pregunta7[pr27]!='\0')
@@ -1031,7 +1031,7 @@ void pregunta26()
                                 FILE *re7;
                                 int re27=0;
                                 char respuesta7[500];
-                                re7=fopen("c:/Users/David/Documents/GitHub/twIE_2021-proyecto_atrapadosmillones/ficheros respuestas/respuesta27.txt","r");
+                                re7=fopen("ficheros respuestas/respuesta27.txt","r");
                                 fscanf(re7,"%[^'.']",respuesta7);
                                 fclose(re7);
                                 while(respuesta7[re27]!='\0')

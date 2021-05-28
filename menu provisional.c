@@ -877,7 +877,7 @@ void pregunta21()
                                 int re21=0;
                                 char rrespuesta1[500];
                                 re1=fopen("ficheros respuestas/respuesta21.txt","r");
-                                fscanf(re1,"%[^'.']",rrespuesta1);
+                                fscanf(re1,"%[^';']",rrespuesta1);
                                 fclose(re1);
                                 while(rrespuesta1[re21]!='\0')
                                 {
@@ -909,7 +909,7 @@ void pregunta21()
                                 int re22=0;
                                 char rrespuesta2[500];
                                 re2=fopen("ficheros respuestas/respuesta22.txt","r");
-                                fscanf(re2,"%[^'.']",rrespuesta2);
+                                fscanf(re2,"%[^'!']",rrespuesta2);
                                 fclose(re2);
                                 while(rrespuesta2[re22]!='\0')
                                 {
@@ -941,7 +941,7 @@ void pregunta21()
                                 int re23=0;
                                 char rrespuesta3[500];
                                 re3=fopen("ficheros respuestas/respuesta23.txt","r");
-                                fscanf(re3,"%[^'.']",rrespuesta3);
+                                fscanf(re3,"%[^'!']",rrespuesta3);
                                 fclose(re3);
                                 while(rrespuesta3[re23]!='\0')
                                 {
@@ -1041,7 +1041,7 @@ void pregunta26()
                                 int re26=0;
                                 char respuesta6[500];
                                 re6=fopen("ficheros respuestas/respuesta26.txt","r");
-                                fscanf(re6,"%[^')']",respuesta6);
+                                fscanf(re6,"%[^'!']",respuesta6);
                                 fclose(re6);
                                 while(respuesta6[re26]!='\0')
                                 {

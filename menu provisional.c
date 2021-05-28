@@ -308,10 +308,14 @@ int main()
 
                                                                                                     if(dres6<=0)
                                                                                                     {
+                                                                                                        premio p[1];
+                                                                                                        p[0]= (premio) {50000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                                                         printf("\n");
                                                                                                         respuesta17();
                                                                                                         printf("\n\n");
                                                                                                         printf("No me lo puedo creer %s, has dejado escapar todo el dinero en la ultima pregunta. Seguro que la proxima vez tienes mas suerte!",u.usuario);
+                                                                                                        printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
+                                                                                                        printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido todo lo que te quedaba, %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                                                     }
 
                                                                                                     else
@@ -320,7 +324,7 @@ int main()
                                                                                                         p[0]= (premio) {50000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                                                         printf("\n");
                                                                                                         printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
-                                                                                                        printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
+                                                                                                        printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
                                                                                                         printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                                                     }
 }
@@ -370,7 +374,7 @@ int main()
                 printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres/1000);
                 for(i=0;i<5;i++)
                     scanf("%i",&reparticion22[i]);
-                correct22 = reparticion22[4];
+                correct22 = reparticion22[2];
                 r = resta(reparticion22,correct22);
                 dres1 = drestante(dres,r);//hace llamada a la funcion drestante que calcula el dinero que le queda a partir de esa pregunta
 
@@ -398,7 +402,7 @@ int main()
                             printf("Selecciona cuantos fajos de billetes quieres poner en cada una de ellas teniendo en cuenta que cada fajo es de 1k (en total te quedan %i fajos)\n",dres1/1000);
                             for(i=0;i<5;i++)
                                 scanf("%i",&reparticion23[i]);
-                            correct23 = reparticion23[3];
+                            correct23 = reparticion23[0];
                             r = resta(reparticion23,correct23);
                             dres2 = drestante(dres1,r);
 
@@ -516,10 +520,14 @@ int main()
 
                                                                 if(dres6<=0)
                                                                 {
+                                                                    premio p[1];
+                                                                    p[0]= (premio) {100000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                     printf("\n");
                                                                     respuesta27();
                                                                     printf("\n\n");
                                                                     printf("No me lo puedo creer %s, has dejado escapar todo el dinero en la ultima pregunta. Seguro que la proxima vez tienes mas suerte!",u.usuario);
+                                                                    printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
+                                                                    printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido lo que te quedaba, %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                 }
                                                                 else
                                                                 {
@@ -527,7 +535,7 @@ int main()
                                                                     p[0]= (premio) {100000-dres,dres-dres1,dres1-dres2,dres2-dres3,dres3-dres4,dres4-dres5,dres5-dres6};
                                                                     printf("\n");
                                                                     printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
-                                                                    printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso:\n");
+                                                                    printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
                                                                     printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
                                                                 }
 }

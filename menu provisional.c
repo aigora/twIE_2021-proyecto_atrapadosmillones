@@ -149,6 +149,8 @@ int main()
                     respuesta11();
                     printf("\n");
                     printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
+                    printf("\n");
+                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                 }
                 else //si el dinero restante es mayor que 0
                 {
@@ -177,11 +179,13 @@ int main()
                         respuesta12();
                         printf("\n\n");
                         printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                        printf("\n");
+                        printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                     }
                     else
                     {
                         int reparticion3[5],dres2,correct3;
-                         printf("\n");
+                        printf("\n");
                         respuesta12();
                         printf("\n\n");
 
@@ -204,6 +208,8 @@ int main()
                                     respuesta13();
                                     printf("\n\n");
                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                    printf("\n");
+                                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                 }
                                 else
                                 {
@@ -231,6 +237,8 @@ int main()
                                                 respuesta14();
                                                 printf("\n\n");
                                                 printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                printf("\n");
+                                                printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
 
                                             }
                                             else
@@ -259,6 +267,8 @@ int main()
                                                                 respuesta15();
                                                                 printf("\n\n");
                                                                 printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                                printf("\n");
+                                                                printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
 
                                                             }
                                                             else
@@ -285,6 +295,8 @@ int main()
                                                                                     respuesta16();
                                                                                     printf("\n\n");
                                                                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                                                    printf("\n");
+                                                                                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
 
                                                                                 }
                                                                                 else
@@ -316,6 +328,8 @@ int main()
                                                                                                         printf("No me lo puedo creer %s, has dejado escapar todo el dinero en la ultima pregunta. Seguro que la proxima vez tienes mas suerte!",u.usuario);
                                                                                                         printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
                                                                                                         printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido todo lo que te quedaba, %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
+                                                                                                        printf("\n\n");
+                                                                                                        printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                                                                                     }
 
                                                                                                     else
@@ -326,6 +340,9 @@ int main()
                                                                                                         printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
                                                                                                         printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
                                                                                                         printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
+                                                                                                        printf("\n\n");
+                                                                                                        printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
+
                                                                                                     }
 }
 }
@@ -358,6 +375,8 @@ int main()
                     respuesta21();
                     printf("\n");
                     printf("No me lo puedo creer, te has quedado sin dinero en la primera pregunta...otra vez sera\n");
+                    printf("\n");
+                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                 }
                 else //si el dinero restante es mayor que 0
                 {
@@ -386,6 +405,8 @@ int main()
                             respuesta22();
                             printf("\n");
                             printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                            printf("\n");
+                            printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                         }
                         else //si el dinero restante es mayor que 0
                         {
@@ -413,6 +434,8 @@ int main()
                                     respuesta23();
                                     printf("\n");
                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                    printf("\n");
+                                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                 }
                                 else //si el dinero restante es mayor que 0
                                 {
@@ -440,6 +463,8 @@ int main()
                                         respuesta24();
                                         printf("\n\n");
                                         printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                        printf("\n");
+                                        printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                     }
                                     else
                                     {
@@ -468,6 +493,9 @@ int main()
                                                     respuesta25();
                                                     printf("\n");
                                                     printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                    printf("\n");
+                                                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
+
                                                 }
                                                 else //si el dinero restante es mayor que 0
                                                 {
@@ -496,6 +524,8 @@ int main()
                                                             respuesta26();
                                                             printf("\n");
                                                             printf("%s siento decirte que ya te has quedado sin dinero...otra vez sera\n",u.usuario);
+                                                            printf("\n");
+                                                            printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                                         }
                                                         else //si el dinero restante es mayor que 0
                                                         {
@@ -525,9 +555,11 @@ int main()
                                                                     printf("\n");
                                                                     respuesta27();
                                                                     printf("\n\n");
-                                                                    printf("No me lo puedo creer %s, has dejado escapar todo el dinero en la ultima pregunta. Seguro que la proxima vez tienes mas suerte!",u.usuario);
+                                                                    printf("No me lo puedo creer %s, has dejado escapar todo el dinero en la ultima pregunta. Seguro que la proxima vez tienes mas suerte!\n",u.usuario);
                                                                     printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
                                                                     printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido lo que te quedaba, %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
+                                                                    printf("\n\n");
+                                                                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                                                 }
                                                                 else
                                                                 {
@@ -537,6 +569,8 @@ int main()
                                                                     printf("Y ahora si...ENHORABUENAAA, has ganado %i eurazos\n",dres6);
                                                                     printf("Por haber llegado hasta aqui nos gustaria hacer contigo un recorrido de tu gran concurso %s:\n",u.usuario);
                                                                     printf("En la primera pregunta has perdido %i euros y en la segunda has perdido %i euros mientras que en la tercera\nte has dejado %i. En las 3 siguientes te has dejado %i  %i y %i euros respectivamente y en la ultima has perdido %i",p[0].per1,p[0].per2,p[0].per3,p[0].per4,p[0].per5,p[0].per6,p[0].per7);
+                                                                    printf("\n\n");
+                                                                    printf("Muchas gracias por participar %s, te dejo por aqui de nuevo el menu por si quieres volver a jugar y si no lo deseas no te preocupes,ya volveras.\n\n",n.nombre);
                                                                 }
 }
 }
@@ -550,7 +584,7 @@ int main()
 
         else
         {
-            printf("Lo siento, no puedes empezar a jugar con esa cantidad de dinero\n");
+            printf("Lo siento, no puedes empezar a jugar con esa cantidad de dinero %s\n",u.usuario);
         }
         printf("\n");
 
@@ -558,7 +592,7 @@ int main()
 
     default:
         printf("\n");
-        printf("La opcion elegida no esta en el menu\n");
+        printf("La opcion elegida no esta en el menu %s\n",u.usuario);
         printf("\n");
         break;
 
